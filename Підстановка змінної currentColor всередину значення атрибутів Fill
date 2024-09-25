@@ -1,0 +1,11 @@
+var Webflow = Webflow || [];
+
+Webflow.push(function() {
+  const icons = document.querySelectorAll(".width--36");   //пишете свій клас іконок
+  if(icons.length > 0) {
+    icons.forEach(icon => {
+      const path = icon.querySelector("path");   //якщо бажаєте змінити fill для rect|circle|line тощо - то прописуєте їх замість path
+      path.setAttribute("fill", "currentColor");
+    });
+  }
+});
